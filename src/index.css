@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "sen";
+  src: url("./fonts/sen.ttf");
+}
+@font-face {
+  font-family: "sora";
+  src: url("./fonts/sora.ttf");
+}
+@font-face {
+  font-family: "ibm-regular";
+  src: url("./fonts/ibm-regular.ttf");
+}
+@font-face {
+  font-family: "ibm-bold";
+  src: url("./fonts/ibm-bold.ttf");
+}
+.control {
+  @apply w-full sm:w-7/12 md:w-6/12 lg:w-4/12 flex justify-between items-center font-sen rtl:font-ibm_r;
+}
+.profile {
+  @apply w-full sm:w-7/12 md:w-6/12 lg:w-4/12 rounded-xl shadow-xl overflow-clip bg-white dark:bg-neutral-800 border-[1px] border-neutral-200 dark:border-neutral-700 font-sen rtl:font-ibm_r;
+}
+.profile h1 {
+  @apply font-sora rtl:font-ibm_b;
+}

@@ -1,0 +1,15 @@
+.logo {
+  @apply w-16 aspect-square rounded-full flex justify-center items-center bg-neutral-200 dark:bg-neutral-700 p-3 absolute top-0 left-4 rtl:right-4 -translate-y-1/2;
+}
+.logo::after {
+  content: "";
+  @apply bg-transparent absolute w-full h-full rounded-full border-4 border-t-sky-800 dark:border-t-[tan] border-l-sky-800 dark:border-l-[tan] border-white dark:border-neutral-800 rotate-45;
+}
+.logo::before {
+  content: "";
+  @apply w-2 aspect-square bg-green-800 dark:bg-green-600 absolute z-40 right-2 bottom-2 rtl:right-3/4 rounded-full;
+  box-shadow: 0 0 0 1.5px rgb(22 101 52 / 40%);
+}
+.profile[dir="rtl"] .logo img {
+  transform: rotateY(180deg);
+}
